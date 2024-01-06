@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation (Assignment)</title>
+    <style>
+        .container {
+            /* width: 1568px;
+            height: 757px;  */
+            width: 98vw;
+            height: 98vh;
+            border: 2px solid black;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 40%;
+            top: 42%;
+            left: 0;
+            background-color: red;
+            animation-name: shape;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes shape {
+            0% {
+                top: 42%;
+                left: 0;
+                background-color: red;
+            }
+
+            25% {
+                top: 0;
+                left: 45%;
+                background-color: green;
+            }
+
+            50% {
+                top: 42%;
+                left: 93%;
+                background-color: blue;
+            }
+
+            75% {
+                top: 85%;
+                left: 45%;
+                background-color: purple;
+            }
+
+            100% {
+                top: 42%;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
